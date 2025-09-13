@@ -242,16 +242,10 @@ For technical issues:
 
 ---
 
-**Assignment Status:** ✅ Complete  
-**All Requirements Met:** ✅ Yes  
-**Ready for Submission:** ✅ Yes
-
----
-
 ## 📦 Repository Information
 
 **Repository Name:** `Frameworks_Assignment`  
 **Assignment:** Week 8 - CORD-19 Data Analysis  
 **Course:** Python Programming  
-**Student:** [Your Name]  
+**Student:** [Nelson Maranda]  
 **Date:** January 2025
