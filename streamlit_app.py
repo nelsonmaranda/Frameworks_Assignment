@@ -48,22 +48,43 @@ st.markdown("""
 @st.cache_data
 def load_data():
     """Load and cache the dataset."""
-    try:
-        df = pd.read_csv('data/sample_metadata.csv')
-        # Convert publish_time to datetime
-        df['publish_time'] = pd.to_datetime(df['publish_time'], errors='coerce')
-        df['year'] = df['publish_time'].dt.year
-        df['month'] = df['publish_time'].dt.month
-        df['abstract_word_count'] = df['abstract'].str.split().str.len()
-        df['title_word_count'] = df['title'].str.split().str.len()
-        return df
-    except FileNotFoundError:
-        st.error("Data file not found. Please run sample_data_generator.py first.")
-        return None
+    # Try multiple possible data locations
+    data_paths = [
+        'data/sample_metadata.csv',
+        'sample_metadata.csv',
+        './data/sample_metadata.csv'
+    ]
+    
+    for path in data_paths:
+        try:
+            if os.path.exists(path):
+                df = pd.read_csv(path)
+                # Convert publish_time to datetime
+                df['publish_time'] = pd.to_datetime(df['publish_time'], errors='coerce')
+                df['year'] = df['publish_time'].dt.year
+                df['month'] = df['publish_time'].dt.month
+                df['abstract_word_count'] = df['abstract'].str.split().str.len()
+                df['title_word_count'] = df['title'].str.split().str.len()
+                return df
+        except Exception as e:
+            continue
+    
+    # If no data file found, show error with instructions
+    st.error("""
+    **Data file not found!** 
+    
+    For local development:
+    1. Run `python sample_data_generator.py` to create sample data
+    
+    For deployment:
+    - Make sure the data file is included in your repository
+    - The app will automatically find the data file
+    """)
+    return None
 
 def create_word_cloud(text_data, title="Word Cloud"):
     """Create a word cloud visualization."""
-    if not text_data or text_data.isnull().all():
+    if text_data is None or text_data.empty or text_data.isnull().all():
         return None
     
     # Combine all text
