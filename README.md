@@ -149,33 +149,6 @@ Week 8 assignment/
    - Search functionality
    - Export capabilities
 
-## 🏆 Assignment Evaluation Criteria
-
-### ✅ Complete Implementation (40%)
-- All required tasks completed
-- Data loading and exploration
-- Data cleaning and preparation
-- Analysis and visualization
-- Streamlit application
-
-### ✅ Code Quality (30%)
-- Well-commented, readable code
-- Proper error handling
-- Modular design
-- Clean structure
-
-### ✅ Visualizations (20%)
-- Clear, appropriate charts
-- Multiple visualization types
-- Interactive elements
-- Professional presentation
-
-### ✅ Streamlit App (10%)
-- Functional application
-- User-friendly interface
-- Interactive features
-- Responsive design
-
 ## 🚀 Usage Instructions
 
 ### For Data Exploration
@@ -269,16 +242,10 @@ For technical issues:
 
 ---
 
-**Assignment Status:** ✅ Complete  
-**All Requirements Met:** ✅ Yes  
-**Ready for Submission:** ✅ Yes
-
----
-
 ## 📦 Repository Information
 
 **Repository Name:** `Frameworks_Assignment`  
 **Assignment:** Week 8 - CORD-19 Data Analysis  
 **Course:** Python Programming  
-**Student:** [Your Name]  
+**Student:** [Nelson Maranda]  
 **Date:** January 2025
