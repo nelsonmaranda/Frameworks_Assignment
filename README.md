@@ -19,6 +19,12 @@ We work with the metadata.csv file from the CORD-19 dataset, which contains info
 
 **Note:** For this assignment, we include a sample data generator to create realistic test data if the full CORD-19 dataset is not available.
 
+## 🌐 Live Demo
+
+**🔗 [View Live Application](https://cord19-data-explorer.streamlit.app/)**
+
+Experience the interactive CORD-19 Data Explorer with real-time filtering, search functionality, and comprehensive visualizations.
+
 ## 🚀 Quick Start
 
 ### Prerequisites
@@ -249,3 +255,7 @@ For technical issues:
 **Course:** Python Programming  
 **Student:** [Nelson Maranda]  
 **Date:** January 2025
+
+### 🔗 Links
+- **Live Demo:** [https://cord19-data-explorer.streamlit.app/](https://cord19-data-explorer.streamlit.app/)
+- **GitHub Repository:** [https://github.com/nelsonmaranda/Frameworks_Assignment](https://github.com/nelsonmaranda/Frameworks_Assignment)
