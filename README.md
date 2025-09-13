@@ -173,7 +173,7 @@ python data_analysis.py
 ```bash
 streamlit run streamlit_app.py
 ```
-**Output:** Web application accessible at http://localhost:8501
+**Output:** Web application accessible at (https://cord19-data-explorer.streamlit.app/)
 
 ## 🔍 Advanced Features
 
